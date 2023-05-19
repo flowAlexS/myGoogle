@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Google</title>
+
+        
+    </head> 
+    <body class="full-body">
+        <!--
+            Header section
+        -->
+        <header class="header header--advanced">
+            <div class="header__logo">
+                <a href="index.html">
+
+                    <img class="img" src="logo.png">
+                </a>
+            </div>
+        
+            <nav class="navbar">
+                <ul class="links">
+                    <li><a class="navlink" href="https://mail.google.com/mail/&amp;ogbl">Gmail</a></li>
+                    <li><a class="navlink" href="images.html">Images</a></li>
+                    <!-- Change the second link later to make a custom image page -->
+                </ul>
+                
+                <ul class="buttons">
+                    <li><button class="btn"><i class="fa-solid fa-bars"></i></button></li>
+                    <li><a class="sign-btn" href="https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=https://www.google.com/%3Fhl%3Den&amp;ec=GAZAmgQ">Sign In</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="advanced--title">
+            <h1>
+                Advanced search
+            </h1>
+        </section>
+
+        <main class="advanced--search">
+            <div class="advanced--divider"></div>
+            <form action="https://www.google.com/search">
+                <div class="form--section">
+                    <div class="form--header form-group">
+                        <h2>Find pages with...</h2>
+                        <p>
+                        </p>
+                        <h2>
+                            To do this in search box.
+                        </h2>
+                    </div>  
+                    <div class="form-group">
+                        <p>all these words:</p>
+                        <input name="as_q" class="full--input" type="text">
+                        <p>Enter the important words: <i class="advanced-showcase">tricolor mioritic shepherd</i></p>
+                    </div>
+                    <div class="form-group">
+                        <p>this exact word or phrase:</p>
+                        <input name="as_epq" class="full--input" type="text">
+                        <p>Put the exact words in quotation marks: <i class="advanced-showcase">    "myoritic shepherd"</i>></p>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            any of these words:
+                        </p>
+                        <input type="text" name="as_oq"
+                        class="full--input">
+                        <p>
+                            Insert <i class="advanced-showcase">OR</i> between all desired words:
+
+                            <i class="advanced-showcase">
+                                standard OR thumbnail
+                            </i>
+                        </p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <p>
+                            none of these words:
+                        </p>
+                        <input type="text" name="as_eq"
+                        class="full--input">
+                        <p>
+                            Insert a minus sign right before the unwanted words: -rodent, -"Jack Russell"    
+                        </p>
+                    </div>
+
+                    <div class="form-group">
+                        <p>
+                            numbers from:
+                        </p>
+                        <div class="input-grid-x3">
+                            <input type="text">
+                            <p>or</p>
+                            <input type="text">
+                        </div>
+                        <p>
+                            Insert 2 periods between numbers and add a unit of measure:
+                            10..35 lb, $300..$500, 2010..2011
+                        </p>
+                    </div>
+                    <div class="advanced--divider"></div>
+                </div>
+                <div class="form--section">
+                    <div class="form--header form-group">
+                        <h2>Then narrow down the results by…</h2>
+
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            language:
+                        </p>
+                        <select class="full--input" id="language">
+                            <option selected disabled>any language</option>
+                        </select>
+                        <p>Find pages in the language you select.</p>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            region:
+                        </p>
+                        <select class="full--input">
+                            <option selected disable>any region</option>
+                        </select>
+                        <p>
+                            Find pages published in a specific region.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            date of last modification:
+                        </p>
+                        <select class="full--input">
+                            <option selected disable>whenever</option>
+                        </select>
+                        <p>
+                            Finds updated pages in the specified range.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            site or domain:
+                        </p>
+                        <input type="text" class="full--input">
+                        <p>
+                            Search a site (such as wikipedia.org ) or limit results to a domain such as <i>.edu</i> , <i>.org</i> , or <i>.gov</i>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            terms that appear:
+                        </p>
+                        <select class="full--input">
+                            <option selected disable>anywhere on the page</option>
+                        </select>
+                        <p>
+                            Search for terms throughout the page, in the page title or web address, or in links to the page you're looking for.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            <a href="https://support.google.com/websearch?p=adv_safesearch&amp">Safe Search :</a>
+                        </p>
+                        <select class="full--input">
+                            <option selected disable>Show explicit results</option>
+                        </select>
+                        <p>
+                            Set to <i><a href="https://support.google.com/websearch?p=adv_safesearch&amp">SafeSearch</a></i> if sexually explicit content is filtered.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            file type:
+                        </p>
+                        <select class="full--input">
+                            <option selected disable>any format</option>
+                        </select>
+                        <p>
+                            Find pages in your preferred format.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            <a href="https://support.google.com/websearch?p=ws_images_usagerights&amp">rights of use :</a>
+                        </p>
+                        <select class="full--input">
+                            <option selected disable>unfiltered by license</option>
+                        </select>
+                        <p>
+                            Find pages you can use for personal purposes.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                        </p>
+                        <input class="btn" type="submit" value="Advanced Search">
+                        <p>
+
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="advanced--divider"></div>                
+                <div class="form--section form--footer">
+                    <h2>You can also...</h2>
+                    <div>
+                        <p><a href="https://support.google.com/websearch?p=adv_pages_similar&amp">Find pages similar to a URL</a></p>
+                        <p><a href="https://support.google.com/websearch?p=adv_pages_visited&amp">The search pages you have accessed</a></p>
+                        <p><a href="https://support.google.com/websearch?p=adv_operators&amp">Use operators in the search box</a></p>
+                        <p><a href="https://www.google.com/preferences">Customize search settings</a></p>
+                        <p></p>
+                    </div>
+                </div>
+            </form>
+            <div class="advanced--divider"></div>
+        </main>
+
+
+        <footer>
+            <div class="country">
+                <p>Romania</p>
+            </div>
+            <hr>
+            <div class="links">
+                <div class="links__subsection">
+                    <a href="https://support.google.com/websearch/?p=ws_results_help">Help</a>
+                    <a href="https://policies.google.com/privacy">Confidentiality</a>
+                    <a href="https://policies.google.com/terms">Terms</a>
+                </div>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/1cfac57ac0.js" crossorigin="anonymous"></script>
+    </body>
+    
+</html>
